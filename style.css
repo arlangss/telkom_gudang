@@ -1,0 +1,159 @@
+/* RESET & DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* TOMBOL MODE */
+.mode-switcher {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mode-switcher button {
+    padding: 10px 16px;
+    margin: 0 6px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mode-switcher button:hover {
+    opacity: 0.85;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+form input, form select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+form button {
+    background-color: #2196f3;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+form button:hover {
+    background-color: #1976d2;
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+table th {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* GRID TAMPILAN STOK */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.grid-item h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.grid-item p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* MODE MALAM 🌙 */
+body.malam {
+    background-color: #121212;
+    color: #ffffff;
+}
+body.malam form input,
+body.malam form select {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+body.malam table {
+    background-color: #1e1e1e;
+}
+body.malam table th {
+    background-color: #333;
+    color: #00ffff;
+}
+body.malam table td {
+    background-color: #181818;
+}
+body.malam .grid-item {
+    background-color: #1e1e1e;
+    color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* MODE KECE 😎 */
+body.kece {
+    background: linear-gradient(to right, #fff0f5, #e0f7fa);
+    color: #333;
+}
+body.kece table th {
+    background-color: #f06292;
+    color: white;
+}
+body.kece .grid-item {
+    background-color: #fff8e1;
+    color: #d81b60;
+}
+
+/* MODE COOL 🧊 */
+body.cool {
+    background: #e3f2fd;
+    color: #111;
+}
+body.cool table th {
+    background-color: #42a5f5;
+    color: white;
+}
+body.cool .grid-item {
+    background-color: #e1f5fe;
+    color: #0277bd;
+}
+
+td:nth-child(6) {
+    font-style: italic;
+    color: #4caf50;
+}
